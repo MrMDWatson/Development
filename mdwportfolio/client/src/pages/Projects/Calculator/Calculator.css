@@ -1,0 +1,138 @@
+#Calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+  "screen screen screen screen"
+  "AC AC divi multiply"
+  "seven eight nine sub"
+  "four five six add"
+  "one two three equal"
+  "zero zero deci equal"
+  ;
+  border: 15px solid black;
+  width: 100%;
+  
+  max-width: 500px;
+  aspect-ratio: 3/4;
+}
+
+.calculator-screen {
+  grid-area: screen;
+  border: 2px solid black;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-color: rgb(59, 105, 41);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "expression"
+  "value";
+}
+
+#expression {
+  margin: 0;
+  padding: 0 5px;
+  grid-area: expression;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+#calculator-display {
+  margin: 0;
+  padding: 0 5px;
+  grid-area: value;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.button {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.numbers {
+  background-color: darkgrey;
+}
+
+.operator {
+  background-color: rgb(72, 72, 72);
+}
+
+.AC {
+  grid-area: AC;
+  background-color: tomato;
+}
+
+.divi {
+  grid-area: divi;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.sub {
+  grid-area: sub;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.add {
+  grid-area: add;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.equal {
+  grid-area: equal;
+  background-color: steelblue;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.deci {
+  grid-area: deci;
+}

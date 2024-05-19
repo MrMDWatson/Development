@@ -1,0 +1,38 @@
+#quote-box {
+  padding: 5px 10px;
+  border: 6px double black;
+  background-color: rgb(154, 153, 167);
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  justify-content: space-evenly;
+}
+
+#quote-box > div {
+  border: 2px double black;
+  background-color: rgb(105, 127, 159);
+  padding: 10px;
+  margin: 5px 0;
+  box-shadow: 0 0 10px;
+}
+
+#quote {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#author {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+#quote-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#tweet-quote {
+  text-decoration: none;
+  color: black;
+}
